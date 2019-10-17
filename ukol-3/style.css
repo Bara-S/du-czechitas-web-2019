@@ -1,0 +1,22 @@
+.hlavni-nadpis{
+    color: darkslateblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+}
+
+.odstavec{
+    color: rgb(58, 58, 58);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  color: darkslateblue;
+}
+
+a:visited {
+color: hotpink;
+}
+
+a:hover {
+  color: rgb(132, 113, 255);
+}
