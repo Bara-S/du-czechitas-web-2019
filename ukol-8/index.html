@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mobilní aplikace</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .menu-show {
+                display: block !important;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="obal">
+
+            <!-- tvoje HTML sem -->
+
+            <header class="header-hlavni">
+                    <a class="header-brand" href="">
+                        SUPER APPKA
+                    </a>
+
+                    <button id="navbarToggler" class ="burger toggler-example">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </button>
+            
+                    <nav id="navbar" class="hlavni-navigace navbar-collapse">
+                        <ul class="seznam">
+                            <li>
+                                <a href="#">Úžasný design</a>
+                            </li>
+                            <li>
+                                <a href="#">Boží funkce</a>
+                            </li>
+                            <li>
+                                <a href="#">Zdarma ke stažení</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                </header>
+
+
+            <main>
+                <section class="container">
+                    <div class="uvod">
+                        <div class="uvodni-text">
+                            <h1>Super Appka</h1>
+                            <p>Úžasná mobilní aplikace, která Ti změní život. </p>
+                        </div>
+
+                        <div class="button">
+                            <button class="button-1">Stáhnout zdarma</button>
+                            <button class="button-2">Více informací</button>
+                        </div>
+                    </div>
+         
+                    <img class="telefon" src="./images/telefon.png" alt="" />
+                </section>
+            </main>
+
+
+            <section>
+                <div class="container-2">
+                        <div class="karta">
+                            <img src="images/letadlo.svg" alt="letadlo" class="ikona">
+                            <h2>Cestuj po světě</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit eligendi, iure sequi nam tempore debitis, doloremque laudantium at molestiae atque dolor eum laboriosam impedit tenetur provident!</p>
+                        </div>
+
+                        <div class="karta">
+                            <img src="images/bubliny.svg" alt="bubliny" class="ikona">
+                             <h2>Chatuj s přáteli</h2>
+                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit eligendi, iure sequi nam tempore debitis, doloremque laudantium at molestiae atque dolor eum laboriosam impedit tenetur provident!</p>
+                        </div>
+
+                         <div class="karta">
+                            <img src="images/mapa.svg" alt="mapa" class="ikona">
+                            <h2>Zažij dobrodružství</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit eligendi, iure sequi nam tempore debitis, doloremque laudantium at molestiae atque dolor eum laboriosam impedit tenetur provident!</p>
+                         </div>
+                </div>
+            </section>
+
+            <footer>
+                    <span class="footer-copy">
+                        &copy; 2019, Web od A do Z
+                    </span>
+            </footer>
+
+        </div><!-- konec .obal -->
+
+        <script>
+            (function () {
+               let navbarToggler = document.querySelector('#navbarToggler')
+               let navbar = document.querySelector('#navbar')
+               console.log('tlacitko', navbarToggler)
+               console.log('navigace', navbar)
+               /*reakce na zmáčknutí tlačítka - událost*/
+    
+               navbarToggler.addEventListener('click', function(e) {
+                navbar.classList.toggle('menu-show')
+    
+                e.stopPropagation()
+                console.log('klik na tlacitko')
+               })
+    
+               document.addEventListener('click', function () {
+                navbar.classList.remove('menu-show')
+                console.log('klik na dokument')
+               })
+    
+               document.addEventListener('keydown', function (e){
+                if(e.keyCode === 27) {
+                    //27 je escape
+                    navbar.classList.remove('menu-show')
+                }
+                console.log('tlacitko zmacknuto', e)
+               })
+    
+            })()
+        </script>
+
+        
+    </body>
+</html>
