@@ -1,0 +1,402 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px;
+    margin: 0 auto; 
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+/* Header */
+
+.burger {
+    display: none;
+}
+
+.header-hlavni {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    padding: 0px 0px 0px 20px;
+}
+
+.header-brand {
+    flex-basis: auto;
+    background: transparent;
+    font-size: 18px;
+    text-decoration: none;
+    color: #48418e;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px 25px 10px 10px;
+}
+
+
+/* Hlavní navigace */
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  li a {
+    display: block;
+    color: #48418e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 2s ease-out;
+  }
+  
+  li a:hover {
+    background-color: #48418e;
+    color: white;
+  }
+
+  
+@media screen and (max-width: 400px) {
+ul.seznam li a {
+    text-align: center;
+}
+}
+
+
+/* Úvod */
+.container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.uvod {
+    background: transparent;
+    flex: 1;
+}
+
+.uvodni-text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    font-weight: 400;
+    margin: 30px 0px;
+    color: white;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.40);
+}
+
+.uvodni-text p {
+    font-family: 'Roboto', sans-serif;;
+    font-weight: 300;
+    padding-top: 0px;
+    font-size: 35px;
+    color: white;
+    margin: 10px 15px 70px 0px;
+}
+
+.button-1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: #48418e;
+    color: white;
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 20px 40px 0px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgb(51, 51, 51);
+    transition: all 0.4s ease 0s;
+}
+
+.button-2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: transparent;
+    color: white;
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    margin: 0px 0px 40px 0px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgb(51, 51, 51);
+    transition: all 0.4s ease 0s;
+}
+
+
+.button-1:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+    box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 1);
+}
+
+.button-2:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+    box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 1);
+}
+
+
+.telefon {
+    background: transparent;
+    position: relative;
+    top: 24px;
+    left: 48px;
+}
+
+
+main {
+    background-color: transparent;
+    background-size: cover;
+    background-image: url(images/pozadi.jpg);
+    background-color: #48418e;
+}
+
+/* Karty */
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.karta {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: auto;
+    margin: 0px;
+    padding: 35px;
+    font-size: 15px;
+}
+
+.ikona {
+    width: 70px;
+    height: 70px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #48418e;
+    font-size: 25px;
+    text-align: center;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+.karta p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #48418e;
+}
+
+.footer-copy {
+    text-align: center;
+    color: white;
+	padding: 0px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 480px) {
+
+
+.obal {
+    width: 300px;
+    margin: 0 auto; 
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/*header*/
+
+nav {
+    display: none;
+}
+
+.header-hlavni {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+    padding: 0px;
+}
+    
+.header-brand {
+    background: #48418e;
+    width: 300px;
+    flex-basis: 85%;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+.burger div {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 4px;
+}
+
+.burger {
+    display: block;
+    background-color: #48418e;
+    flex-grow: 1;
+    height: 32.5px;
+    padding: auto;
+    margin: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+/*nav*/
+
+ul {
+    
+    display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   padding: 0;
+   margin: 0;
+}
+     
+li a {
+   width: 300px;
+   flex-basis: 100%;
+   color: #48418e;
+   text-align: center;
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   transition: background-color 1s ease-out;
+}
+ul.seznam li a {
+   padding: 5px 0px 5px 0px;
+}
+
+
+
+/*uvod*/
+.uvodni-text h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 5px 0px;
+    color: white;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.40);
+    }
+    
+.uvodni-text p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 0px;
+    font-size: 20px;
+    color: white;
+    margin: 10px 0px;
+}
+
+.telefon {
+    display: none;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-1 {
+    margin: 2px 0px 2px 0px;
+    padding: 0px;
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.button-2 {
+    margin: 5px 0px 10px 0px;
+    padding: 0px;
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+}
+
+/*karty*/
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+
+.karta {
+    margin: 10px;
+    padding: 2px 10px 2px 10px;
+}
+
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #48418e;
+    font-size: 15px;
+    text-align: center;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+.karta p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+.ikona {
+    width: 50px;
+    height: 50px;
+}
+}
